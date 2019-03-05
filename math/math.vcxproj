@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="172_factorial trailing zero.cpp" />
     <ClCompile Include="223_rectangle area.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
