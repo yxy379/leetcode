@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="048_roate image.cpp">
+    <ClCompile Include="189_rotate array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="318_maximum product of words length.cpp">
+    <ClCompile Include="693_Binary number with alternating bits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
