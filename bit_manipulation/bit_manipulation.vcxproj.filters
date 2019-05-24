@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="693_Binary number with alternating bits.cpp">
+    <ClCompile Include="421_maximum xor in array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
