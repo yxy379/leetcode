@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="080_remove duplicates from sorted array II.cpp">
+    <ClCompile Include="128_longest consecutive sequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
