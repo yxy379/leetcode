@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="059_spiral matrix II.cpp">
+    <ClCompile Include="0073_set matrixt zeros.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
