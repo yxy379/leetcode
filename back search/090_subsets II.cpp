@@ -11,7 +11,6 @@ public:
 		vector<int> curr;
 		vector<vector<int>> res;
 		sort(nums.begin(), nums.end());
-		//res.push_back(curr);
 		dfs(nums, 0, curr, res);
 		return res;
 	}
@@ -23,7 +22,6 @@ private:
 		{	
 			if ((i > index) && (nums[i] == nums[i - 1])) continue;
 			curr.push_back(nums[i]);
-			//res.push_back(curr);
 			dfs(nums, i + 1, curr, res);
 			curr.pop_back();
 		}
