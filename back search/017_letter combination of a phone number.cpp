@@ -28,7 +28,7 @@ private:
 		for (int i = 0; i < letter.size(); i++)
 		{
 			comb[index] = letter[i];
-			dfs(number, index+1, dict, comb, res);
+			dfs(number, index+1, dict, comb, res); // cannot be index++ or ++index!
 		}
 	}
 };

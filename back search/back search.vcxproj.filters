@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="017_letter combination of a phone number.cpp">
+    <ClCompile Include="039_combinaiton sum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
