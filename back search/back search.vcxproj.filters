@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="077_combination.cpp">
+    <ClCompile Include="090_subsets II.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
