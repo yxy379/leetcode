@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zzz", "zzz\zzz.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "design", "design\design.vcxproj", "{D736763F-0429-4182-8DBF-E154018344E2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "back search", "back search\back search.vcxproj", "{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{D736763F-0429-4182-8DBF-E154018344E2}.Release|x64.Build.0 = Release|x64
 		{D736763F-0429-4182-8DBF-E154018344E2}.Release|x86.ActiveCfg = Release|Win32
 		{D736763F-0429-4182-8DBF-E154018344E2}.Release|x86.Build.0 = Release|Win32
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Debug|x64.ActiveCfg = Debug|x64
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Debug|x64.Build.0 = Debug|x64
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Debug|x86.ActiveCfg = Debug|Win32
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Debug|x86.Build.0 = Debug|Win32
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Release|x64.ActiveCfg = Release|x64
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Release|x64.Build.0 = Release|x64
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Release|x86.ActiveCfg = Release|Win32
+		{847C9CA8-23D9-41E6-BFC0-616039DEBAD5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
