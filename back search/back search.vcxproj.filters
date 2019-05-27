@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="784_letter case permutation.cpp">
+    <ClCompile Include="212_word search.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
