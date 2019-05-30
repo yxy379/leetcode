@@ -10,14 +10,8 @@ public:
 		int res = 0;
 		while (x)
 		{
-			auto prev = res;
-			res *= 10;
-			res += x % 10;
-			if (res / 10 != prev)
-			{
-				res = 0;
-				break;
-			}
+			if (res > INT_MAX / 10) return 0;
+			res = res * 10 + x % 10;
 			x /= 10;
 		}
 		return res;
@@ -27,7 +21,7 @@ public:
 int main()
 {
 	Solution a;
-	cout << a.reverseInteger(123) << endl; // 2^31-1=2147483647
+	cout << a.reverseInteger(2147483647) << endl; // 2^31-1=2147483647
 	system("pause");
 	return 1;
 }
