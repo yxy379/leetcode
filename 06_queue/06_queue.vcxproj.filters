@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="281_zigzag iterator.cpp">
+    <ClCompile Include="225_implement stack using queues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

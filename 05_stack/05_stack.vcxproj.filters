@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="020_valid parentheses.cpp">
+    <ClCompile Include="150_evalute reverse polish notation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
