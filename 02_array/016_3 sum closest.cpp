@@ -47,11 +47,47 @@ public:
 	}
 };
 
+class Solution1 {
+public:
+	int threeSumClosest(vector<int>& nums, int target) {
+		int diff = INT_MAX;
+		int res = INT_MAX;
+		//if (nums.size()<3) return 0;
+		sort(nums.begin(), nums.end());
+		for (int i = 0; i < nums.size() - 2; i++) {
+			if ((i > 0) && (nums[i] == nums[i - 1])) continue;
+			int sum = target - nums[i];
+			int m = i + 1, n = nums.size() - 1;
+			while (m < n)
+			{
+				if ((nums[m] + nums[n]) == sum)
+				{
+					return target;
+				}
+				else if ((nums[m] + nums[n]) < sum)
+				{
+					m++;
+				}
+				else
+				{
+					n--;
+				}
+				if (diff > abs(nums[m] + nums[n] - sum)) {
+					diff = abs(nums[m] + nums[n] - sum);
+					res = nums[i] + nums[m] + nums[n];
+				}
+
+			}
+		}
+		return res;
+	}
+};
+
 int main()
 {
 	vector<int> input{ -1, 2, 1, -4 };
 	int target = 1;
-	Solution a;
+	Solution1 a;
 	int res = a.threeSumClosest(input, target);
 	cout << res << endl;
 	cin.get();

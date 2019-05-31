@@ -14,9 +14,10 @@ public:
 		vector<vector<int>> res{};
 		for (int i = 0; i < input.size() - 3; i++)
 		{
+			if ((i > 0) && (input[i] == input[i - 1])) continue;
 			for (int j = i + 1; j < input.size() - 2; j++)
 			{
-				if (input[j] == input[j - 1]) continue;
+				if ((j > i + 1) && (input[j] == input[j - 1])) continue;
 				int a = j + 1, b = input.size() - 1;
 				while (a < b)
 				{
@@ -43,7 +44,7 @@ public:
 int main()
 {
 	Solution a;
-	vector<int> input{ 1, 0, -1, 0, -2, 2 };
+	vector<int> input{ 0, 0, 0, 0 }; // {0, 0, 0, 0}
 	int target = 0;
 	vector<vector<int>> res{};
 	res = a.fourSum(input, target);

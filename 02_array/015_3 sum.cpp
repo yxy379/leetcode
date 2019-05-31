@@ -9,7 +9,8 @@ class Solution
 public:
 	vector<vector<int>> threeSum(vector<int>& input)
 	{
-		vector<vector<int>> res{};
+		vector<vector<int>> res;
+		if (input.size() < 3) return {};
 		sort(input.begin(), input.end());
 
 		for (int i = 0; i < input.size() - 2; i++)
