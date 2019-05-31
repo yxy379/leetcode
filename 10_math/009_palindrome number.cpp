@@ -33,7 +33,7 @@ public:
 		int temp = x, reverse = 0;
 		while (temp)
 		{
-			if (isOverflow(reverse, temp % 10)) return false;
+			if (abs(reverse)>INT_MAX) return false;
 			else
 			{
 				reverse = reverse * 10 + temp % 10;
@@ -41,14 +41,6 @@ public:
 			}
 		}
 		return reverse == x;
-	}
-
-private:
-	bool isOverflow(int q, int r)
-	{
-		static const int q_max = numeric_limits<int>::max() / 10;
-		static const int r_max = numeric_limits<int>::max() % 10;
-		return(q > q_max) || ((q == q_max) && (r > r_max));
 	}
 };
 

@@ -1290,44 +1290,115 @@
 
 
 // 461
+//#include <iostream>
+//#include <vector>
+//#include <string>
+//#include <bitset>
+//#include <algorithm>
+//using namespace std;
+//
+//class Solution
+//{
+//public:
+//	vector<int> plusOne(vector<int>& num)
+//	{
+//		reverse(num.begin(), num.end());
+//		num[0]++;
+//		int carry = 0;
+//		for (int i = 0; i < num.size(); i++)
+//		{
+//			num[i] += carry;
+//			carry = num[i] / 10;
+//			num[i] %= 10;
+//		}
+//		if (carry)
+//		{
+//			num.push_back(carry);
+//		}
+//		reverse(num.begin(), num.end());
+//		return num;
+//	}
+//
+//};
+//
+//int main()
+//{
+//	vector<int> num{1, 2, 3};
+//	num.push_back(1);
+//	for (int i = 0; i < num.size(); i++)
+//	{
+//		cout << num[i] << " ";
+//	}
+//	system("pause");
+//}
+
+// 012
+//#include <iostream>
+//#include <string>
+//#include <vector>
+//using namespace std;
+//
+//string intToRoman(int x)
+//{
+//	vector<int> num{ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+//	vector<string> rom{ "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+//	string res;
+//	int i = 0;
+//	while (x)
+//	{
+//		while (x / num[i])
+//		{
+//			res.append(rom[i]);
+//			x -= num[i];
+//		}
+//		i++;
+//	}
+//	return res;
+//}
+//
+//int main()
+//{
+//	cout << intToRoman(1994) << endl;
+//	system("pause");
+//	return 1;
+//}
+
+// 013
 #include <iostream>
-#include <vector>
 #include <string>
-#include <bitset>
-#include <algorithm>
+#include <unordered_map>
 using namespace std;
 
-class Solution
+int romanToInt(string s)
 {
-public:
-	vector<int> plusOne(vector<int>& num)
+	unordered_map <char, int> m
 	{
-		reverse(num.begin(), num.end());
-		num[0]++;
-		int carry = 0;
-		for (int i = 0; i < num.size(); i++)
+		{'I', 1},
+		{'V', 5},
+		{'X', 10},
+		{'L', 50},
+		{'C', 100},
+		{'D', 500},
+		{'M', 1000}
+	};
+	int res = 0;
+	for (int i = 0; i < s.size(); i++)
+	{
+		if ((i > 0) && (m[s[i]] > m[s[i - 1]]))
 		{
-			num[i] += carry;
-			carry = num[i] / 10;
-			num[i] %= 10;
+			res = res + m[s[i]] - 2 * m[s[i - 1]];
 		}
-		if (carry)
+		else
 		{
-			num.push_back(carry);
+			res += m[s[i]];
 		}
-		reverse(num.begin(), num.end());
-		return num;
 	}
-
-};
+	return res;
+}
 
 int main()
 {
-	vector<int> num{1, 2, 3};
-	num.push_back(1);
-	for (int i = 0; i < num.size(); i++)
-	{
-		cout << num[i] << " ";
-	}
+	cout << romanToInt("MCMXCIV") << endl;
 	system("pause");
+	return 1;
 }
