@@ -52,10 +52,10 @@ int main()
 	{
 		for (int j = 0; j < res[i].size(); j++)
 		{
-			cout << res[i][j] << ", ";
+			cout << res[i][j] << " ";
 		}
 		cout << endl;
 	}
-	cin.get();
+	system("pause");
 	return 0;
 }
