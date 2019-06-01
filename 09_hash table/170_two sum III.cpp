@@ -38,13 +38,6 @@ int main()
 	cout << a.find(1) << endl;
 	cout << a.find(2) << endl;
 	cout << a.find(3) << endl;
-
-	unordered_map<int, int> c = { {1, 1}, {1, 2}, {3, 3} };
-	for (auto x : c)
-	{
-		cout << x.first << " " << x.second << endl;
-	}
-	cout << c.count(1) << endl;
 	system("pause");
 	return 1;
 }
