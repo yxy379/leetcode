@@ -37,8 +37,6 @@ int main()
 	{'.', '6', '.', '.', '.', '.', '2', '8', '.'},
 	{'.', '.', '.', '4', '1', '9', '.', '.', '5'},
 	{'.', '.', '.', '.', '8', '.', '.', '7', '9'} };
-	vector<vector<int>> x{ {}, {1, 2}, {3, 4} };
-	if (x.empty() || x[0].empty()) cout << "x empty" << endl;
 	cout << isSudoku(s) << endl;
 	system("pause");
 	return 1;
