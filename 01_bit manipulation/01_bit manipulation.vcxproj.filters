@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="421_maximum xor in array.cpp">
+    <ClCompile Include="287_find the duplicate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
