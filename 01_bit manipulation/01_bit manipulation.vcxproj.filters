@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="287_find the duplicate.cpp">
+    <ClCompile Include="477_total hamming distance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
