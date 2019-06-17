@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="036_valid sudoku.cpp">
+    <ClCompile Include="989_add to array form integer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
